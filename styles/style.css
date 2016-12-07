@@ -1,11 +1,14 @@
-/* BODY */
+html {
+    position: relative;
+    min-height: 100%;
+}
 
+/* BODY */
 body {
-    margin: 0;
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-color: #141215;
-    background-size: 100%;
+    margin: 0 0 3rem;
+    background: gray; /* For browsers that do not support gradients */
+    background: linear-gradient(to top, gray, orange); /* Standard syntax */
+    min-height: 100%;
 }
 
 /* HEADER */
@@ -31,13 +34,11 @@ h1 {
 /* NAVIGATION */
 nav {
     width: 100%;
-    margin: 0;
-    padding: 0;
     position: fixed;
     overflow: auto;
     border: 3px solid black;
-    background-image: url("../images/navbar.png");
-    background-size: cover;
+    background: gray; /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom right, gray, white); /* Standard syntax */
     text-align: center;
     z-index: 10; /* H1 was on top of the navbar */
 }
@@ -86,25 +87,91 @@ nav ul li a:active {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: #A00000;
-    padding-top: 3%;
-    min-height: 60%;
-    position: absolute;
+    background-color: #808080;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 /* Class for posts */
 .post {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 1px 30px 5px 30px;
     color: orange;
-    font-size: 40px;
-    border: 5px solid gray;
+    font-size: 2rem;
+    margin: 0 10px 30px 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
     border-radius: 15px;
     background-color: #EEE;
-    margin-bottom: 30px;
     word-wrap: break-word;
 }
 
 .post h2 {
     text-align: center;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 3rem;
+    background-color: #CCC;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+footer ul {
+    margin: 0px;
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer ul li{
+    list-style-type: none;
+    font-size: 13px;
+    display: inline;
+    padding-right: 5%;
+    padding-left: 5%;    
+}
+
+footer ul li a {
+    color: black;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+footer ul li a:focus {
+    color: white;
+}
+
+footer ul li a:active {
+    color: #4F4FFF;
+}
+
+/* Class for currently active link in footer*/
+.activeFooter {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* GENERIC CLASSES */
+.centerImage {
+    margin: 0 auto;
+    display: block;
+}
+
+/* ERROR VALIDATION */
+.error {
+    color: red;
+    font-size: 1.3rem;
+}
+
+input:focus, textarea:focus {
+    background-color: #F7F7F7;
+    color: blue;
 }
