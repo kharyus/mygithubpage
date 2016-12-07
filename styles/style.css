@@ -1,0 +1,110 @@
+/* BODY */
+
+body {
+    margin: 0;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-color: #141215;
+    background-size: 100%;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    width: 100%;
+    height: 20rem;
+    background-color: #FFFFFF;
+    background: url("../images/photo.jpg") center center;
+    background-size: cover;
+}
+
+h1 {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    overflow: auto;
+    border: 3px solid black;
+    background-image: url("../images/navbar.png");
+    background-size: cover;
+    text-align: center;
+    z-index: 10; /* H1 was on top of the navbar */
+}
+
+nav ul {
+    margin: 0px;
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+}
+
+nav ul li{
+    list-style-type: none;
+    font-size: 20px;
+    display: inline;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+nav ul li a {
+    color: black;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li a:focus {
+    color: white;
+}
+
+nav ul li a:active {
+    color: #4F4FFF;
+}
+
+/* Class for currently active link */
+.active {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* CONTENT */
+
+/* Apparently using // as comments breaks everything, even though i used it before and it didnt... hmm */
+#content {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #A00000;
+    padding-top: 3%;
+    min-height: 60%;
+    position: absolute;
+}
+
+/* Class for posts */
+.post {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: orange;
+    font-size: 40px;
+    border: 5px solid gray;
+    border-radius: 15px;
+    background-color: #EEE;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+}
+
+.post h2 {
+    text-align: center;
+}
