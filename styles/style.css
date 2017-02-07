@@ -95,7 +95,7 @@ nav ul li a:active {
 /* Class for posts */
 .post {
     padding: 1px 30px 5px 30px;
-    color: orange;
+    /*color: red;*/
     font-size: 2rem;
     margin: 0 10px 30px 10px;
     margin-right: 10px;
@@ -172,6 +172,7 @@ footer ul li a:active {
 }
 
 input:focus, textarea:focus {
-    background-color: #F7F7F7;
-    color: blue;
+    /*background-color: #F7F7F7;*/
+    /*color: blue;*/
+    font-weight: bold;
 }
